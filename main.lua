@@ -2310,7 +2310,7 @@ local Rage = library:AddWindow('Rage')
 local Settings = library:AddWindow('Settings')
 
 local CamLock = Legit:AddSection('Camera Lock')
-CamLock:AddToggle('Enabled',true,true, function(v) CamLock.Enabled = v end)
+CamLock:AddToggle('Enabled',true,Enum.KeyCode.Q, function(v) CamLock.Enabled = v end)
 CamLock:AddTextBox('Prediction',nil,false,5,function(a) CamLock.Prediction = a end)
 CamLock:AddToggle('Resolver',true,nil, function(v) CamLock.Resolver = v end)
 
